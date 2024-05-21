@@ -1,0 +1,136 @@
+body {
+  font-family: "Courier New", monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.terminal-container {
+  background-color: rgb(74, 19, 74);
+  border: 1px solid #00ff00;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  height: 60vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#intro {
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #00ff00;
+  animation: typing 2s steps(24) forwards;
+  position: absolute;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 600px) {
+  #intro {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+    margin-left: 0; /* Remove the fixed margin-left */
+    width: 80%; /* Adjust the width for smaller screens */
+    text-align: center; /* Center-align the text */
+    top: 20px; /* Adjust the top position */
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 139px; 
+  height: auto; 
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 80px; 
+    height: auto;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+.no-filter{
+  filter: none;
+}
+
+.command {
+  background-color: rgb(19, 74, 35); /* Set the background color to match the terminal */
+  color: inherit; /* Inherit the color from the parent element (terminal) */
+  border: none;
+  outline: none;
+  width: calc(100% - 22px);
+  padding: 5px 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: auto; 
+  margin: 0 5px; 
+  filter: brightness(0.8);
+}
+
+.social-icon:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+
+.prompt {
+  margin: 0;
+}
+
+#output {
+  margin-top: 10px;
+  padding-bottom: 20px;
+}
+
+/* Style for links (unvisited) */
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+/* Style for visited links */
+a:visited {
+  color: #e0fd09;
+  text-decoration: none;
+}
+
+/* Style for links on hover */
+a:hover {
+  color: #00ffff;
+  text-decoration: underline;
+}
+
+/* Style for active links */
+a:active {
+  color: #ffff00;
+  text-decoration: none;
+}
