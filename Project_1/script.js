@@ -61,8 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'projects' || 'project':
                 const projectLinks = [
                     {
-                        title: "Instagram Clone",
-                        link: "https://n6p1vo.csb.app/"
+                        title: "Travelling Website",
+                        link: "https://terminatorss24.github.io/Travelling_Website/"
                     },
                     {
                         title: "Coders Dashboard",
